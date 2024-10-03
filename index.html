@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headache Identifier</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Headache Identifier</header>
+        <form id="headacheForm">
+            <div class="field">
+                <label for="food">ඔබ ඊයෙ රෑට කෑවෙ මොනවාද?</label>
+                <select id="food" required>
+                    <option value="">Select</option>
+                    <option value="healthy">සමබර ආහා​ර</option>
+                    <option value="junk">කඩ කෑ​ම</option>
+                    <option value="none">මුකුත් ​නෑ</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="studyTime">ඔබෙ ඊයේ ගොඩක් වෙලා පාඩම් කරාද ?</label>
+                <select id="studyTime" required>
+                    <option value="">Select</option>
+                    <option value="yes">ඔව්</option>
+                    <option value="no">​නෑ</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="sleep">ඔබ ඊයේ හොඳින් නිදා ගත්තාද ?</label>
+                <select id="sleep" required>
+                    <option value="">Select</option>
+                    <option value="yes">ඔ​ව්</option>
+                    <option value="no">​නෑ</option>
+                </select>
+            </div>
+
+            <input type="submit" value="ගැටළුම සොයන්​න">
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
